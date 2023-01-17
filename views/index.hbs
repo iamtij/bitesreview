@@ -1,0 +1,39 @@
+{{!-- <h1>{{appTitle}} 🚀</h1>
+<p>Welcome RootLearner!</p> --}}
+{{!-- {{#each restaurants}}
+    <p>{{name}}</p>
+{{/each}} --}}
+
+<div class="container">
+
+{{#each restaurants}}
+
+<div class="card">
+
+    <img src="{{thumbnail}}" class="card-img-top" alt="{{name}}">
+
+    <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <p class="card-text">{{cuisine}}</p>
+    </div>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Address: {{address}}</li>
+        <li class="list-group-item">City: {{city}}</li>
+        <li class="list-group-item">Rating: {{rating}}</li>
+    </ul>
+
+    <div class="card-body">
+        <a href="/viewreviews/{{_id}}" class="card-link">View Reviews</a>
+        <a href="/reviews/{{_id}}/edit" class="card-link">Update Restaurant</a>
+    </div>
+        
+
+</div>
+
+{{/each}}
+
+
+
+</div>
+

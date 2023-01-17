@@ -1,0 +1,38 @@
+<form action="add-restaurant" enctype="multipart/form-data" method="post">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input name="name" type="text" class="form-control" id="name" />
+  </div>
+  <div class="mb-3">
+    <label for="cuisine" class="form-label">Cuisine</label>
+    {{!-- <input name="cuisine" type="text" class="form-control" id="cuisine" /> --}}
+    <select name="cuisine" id="cuisine" class="form-control">
+        <option value=""></option>
+        <option value="American">American</option>
+        <option value="Filipino">Filipino</option>
+        <option value="Italian">Italian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Fast Food">Fast Food</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="address" class="form-label">Address</label>
+    <input name="address" type="text" class="form-control" id="address" />
+  </div>
+    <div class="mb-3">
+    <label for="city" class="form-label">City</label>
+    <input name="city" type="text" class="form-control" id="city" />
+  </div>
+  </div>
+    <div class="mb-3">
+    <label for="createdby" class="form-label">Created By</label>
+    <input name="createdby" type="text" class="form-control" id="createdby" />
+  </div>
+  </div>
+    <div class="mb-3">
+    <label for="thumbnail" class="form-label">Thumbnail</label>
+    <input name="thumbnail" type="file" class="form-control-file"" id="thumbnail" />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

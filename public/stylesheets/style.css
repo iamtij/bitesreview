@@ -1,0 +1,42 @@
+body {
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+
+a {
+  color: #00b7ff;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:30px;
+
+}
+
+.card {
+  padding:20px;
+
+}
+
+.btn-custom {
+  margin:20px;
+}
+form {
+  margin:5px;
+}
+
+img {
+  object-fit: cover;
+  width: 100px; /* or any desired square size */
+  height: 200px; /* or any desired square size */
+}
+
+.review-img {
+  margin-top: 20px;
+  width: 300px; /* or any desired square size */
+  height: 200px; /* or any desired square size */
+}

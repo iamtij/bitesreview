@@ -1,0 +1,27 @@
+<form action="add" enctype="multipart/form-data"  method="post">
+  <div class="mb-3">
+    <label for="rating" class="form-label">Rating</label>
+    {{!-- <input name="rating" type="text" class="form-control" id="rating" /> --}}
+    <select name="rating" id="rating" class="form-control">
+        <option value=""></option>
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="review" class="form-label">Comment</label>
+    <input name="review" type="text" class="form-control" id="review" />
+  </div>
+  <div class="mb-3">
+    <label for="reviewer" class="form-label">Name</label>
+    <input name="reviewer" type="text" class="form-control" id="reviewer" />
+  </div>
+   <div class="mb-3">
+    <label for="thumbnail" class="form-label">Upload images</label>
+    <input name="thumbnail" type="file" class="form-control-file" id="thumbnail" />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
